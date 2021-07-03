@@ -601,9 +601,9 @@ const compoundedTikiAfterNDays = (starting, days) => {
                 <h1>Please enter your address above</h1>
               </div>
               <div>
-                <h1>
+                {/* <h1>
                   Buy a BNBHODL
-                </h1>
+                </h1> */}
               </div>
             </div>
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4  ">
@@ -676,7 +676,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </p>
                 </div>
               </div>
-
+{/* 
               <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 col-span-2 lg:col-span-1">
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/money.d301ec34.png" />
@@ -712,7 +712,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                 </div>
               </div>
 
-
+ */}
 
               <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 col-span-2 lg:col-span-1">
                 <div className="p-4 flex flex-col text-center items-center">
