@@ -424,6 +424,43 @@ async function getTikiPrice() {
   // const address = "0x63222b8120e7b72D9a39093f44cb0a9dea629132";
 
   
+  function TimeDifference(current, previous) {
+
+  var msPerMinute = 60 * 1000;
+  var msPerHour = msPerMinute * 60;
+  var msPerDay = msPerHour * 24;
+  var msPerMonth = msPerDay * 30;
+  var msPerYear = msPerDay * 365;
+
+  var elapsed = current - previous;
+
+  if (elapsed < msPerMinute) {
+      const secs = Math.round(elapsed/1000)
+      return secs > 1 ? secs + ' Seconds Ago' : secs + ' Second Ago';   
+  }
+
+  else if (elapsed < msPerHour) {
+      const mins = Math.round(elapsed/msPerMinute)
+      return mins > 1 ? mins + ' Minutes Ago' : mins + ' Minute Ago';   
+  }
+
+  else if (elapsed < msPerDay ) {
+      const hours = Math.round(elapsed/msPerHour )
+      return hours > 1 ? hours + ' Hours Ago' : hours + ' Hour Ago';  
+  }
+
+  else if (elapsed < msPerMonth) {
+      return '~ ' + Math.round(elapsed/msPerDay) + ' days Ago';   
+  }
+
+  else if (elapsed < msPerYear) {
+      return '~ ' + Math.round(elapsed/msPerMonth) + ' months Ago';   
+  }
+
+  else {
+      return '~ ' + Math.round(elapsed/msPerYear ) + ' years Ago';   
+  }
+}
 
   let timer
 
@@ -525,7 +562,7 @@ export default function Home({address}) {
    const earningsInDollars = tikiVolume == 0 ? (holdings/1000000000)*220000 : (holdings/1000000000)*(tikiVolume*0.11)
   const earningsInBnb = earningsInDollars / bnbPrice
   
-
+  const payoutText = <><span className="text-yellow-300">{nextPayoutValue != 0 ? nextPayoutValue + ' BNB' : 'Processing'}</span>{Date.now()-lastPaid >= 3600000 ? ` | ${nextPayoutProgress}%` : ` | ${(60-((Date.now()-lastPaid)/60000)).toFixed(0)}m`}</>
 const compoundedTikiAfterNDays = (starting, days) => {
     let accumulatedTiki = Number(starting)
     for (let i = 0; i < days; i++) {
@@ -577,7 +614,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </div>
                   <div>
                     <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Your BNBHODL Holdings</p>
-                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">0 BNBHODL</p>
+                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${numberWithCommas(holdings)}`}</p>
                   </div>
                 </div>
               </div>
@@ -587,8 +624,8 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Your BNBHODL Holdings</p>
-                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">0 BNBHODL</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Total BNB Paid</p>
+                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${(paid / 1e18).toFixed(4)}`}</p>
                   </div>
                 </div>
               </div>
@@ -598,8 +635,8 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Your BNBHODL Holdings</p>
-                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">0 BNBHODL</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Last Payout Time</p>
+                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${lastPaid === 0 ? 'Never' : TimeDifference(Date.now(), lastPaid)}`}</p>
                   </div>
                 </div>
               </div>
@@ -609,8 +646,8 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Your BNBHODL Holdings</p>
-                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">0 BNBHODL</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Payout Loading</p>
+                    <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{payoutText}</p>
                   </div>
                 </div>
               </div>
