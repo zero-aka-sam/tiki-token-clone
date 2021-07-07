@@ -23,9 +23,9 @@ export default function Aside({ setsidebarp }) {
 
     return (
         <>
-            <aside className="z-30  bg-white dark:bg-gray-800 ">
-                <div className="py-4 text-gray-500 dark:text-gray-400">
-                    <a className="flex ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="">
+            <aside className="z-30  bg-white dark:bg-pink-800 ">
+                <div className="py-4 text-gray-500 dark:text-gray-100">
+                    <a className="flex ml-6 text-lg font-bold text-gray-800 dark:text-gray-100" href="">
                         <img className="mr-2 w-10 h-10" src="logo2.png" />
                         <span className="self-center">The BNBHODL Bar</span>
                     </a>
