@@ -607,7 +607,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
               </div>
             </div>
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4  ">
-              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800">
+              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400">
                 <div className="p-4 flex items-center">
                   <div className="p-3 rounded-md text-orange-500 dark:text-orange-100 bg-orange-100 dark:bg-orange-500 mr-4">
                     <SiStencyl className="text-2xl" />
@@ -618,7 +618,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </div>
                 </div>
               </div>
-              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800">
+              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400">
                 <div className="p-4 flex items-center">
                   <div className="p-3 rounded-md text-orange-500 dark:text-orange-100 bg-orange-100 dark:bg-orange-500 mr-4">
                     <SiStencyl className="text-2xl" />
@@ -629,7 +629,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </div>
                 </div>
               </div>
-              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800">
+              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400">
                 <div className="p-4 flex items-center">
                   <div className="p-3 rounded-md text-orange-500 dark:text-orange-100 bg-orange-100 dark:bg-orange-500 mr-4">
                     <SiStencyl className="text-2xl" />
@@ -640,7 +640,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </div>
                 </div>
               </div>
-              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800">
+              <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400">
                 <div className="p-4 flex items-center">
                   <div className="p-3 rounded-md text-orange-500 dark:text-orange-100 bg-orange-100 dark:bg-orange-500 mr-4">
                     <SiStencyl className="text-2xl" />
@@ -654,7 +654,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
             </div>
 
 
-            <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 mt-4">
+            <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 mt-4">
               <div className="p-4 flex items-center">
                 <button className="align-bottom inline-flex items-center justify-center cursor-pointer leading-5 transition-colors duration-150 font-medium focus:outline-none px-4 py-2 rounded-lg text-sm text-white bg-yellow-600 border border-transparent opacity-50 w-full h-full  " disabled type="button">Payout Is Processing</button>
               </div>
@@ -664,7 +664,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
 
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 col-span-2">
+              <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/bnb.162aaf57.png" />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">Total BNB Paid To MINIBABYDOGE Holders</p>
@@ -677,7 +677,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                 </div>
               </div>
               
-              <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 col-span-2 lg:col-span-1">
+              <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2 lg:col-span-1">
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/money.d301ec34.png" />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">
@@ -714,7 +714,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
 
 
-              {/* <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 col-span-2 lg:col-span-1">
+              {/* <div className="border border-gray-300 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2 lg:col-span-1">
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/money.d301ec34.png" />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">
