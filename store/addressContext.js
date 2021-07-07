@@ -1,5 +1,6 @@
-import {createContext} from 'react'
+import { createContext } from 'react';
 
-const AddressContext = createContext()
+const AddressContext = createContext();
 
-export  {AddressContext}
+export { AddressContext };
+
