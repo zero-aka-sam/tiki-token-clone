@@ -613,7 +613,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Your miniBABYDOGE Holdings</p>
+                    <p className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-100">Your miniBABYDOGE Holdings</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${numberWithCommas(holdings)}`}</p>
                   </div>
                 </div>
@@ -624,7 +624,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Total BNB Paid</p>
+                    <p className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-100">Total BNB Paid</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${(paid / 1e18).toFixed(4)}`}</p>
                   </div>
                 </div>
@@ -635,7 +635,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Last Payout Time</p>
+                    <p className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-100">Last Payout Time</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${lastPaid === 0 ? 'Never' : TimeDifference(Date.now(), lastPaid)}`}</p>
                   </div>
                 </div>
@@ -646,7 +646,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Payout Loading</p>
+                    <p className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-100">Payout Loading</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{payoutText}</p>
                   </div>
                 </div>
