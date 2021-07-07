@@ -40,7 +40,7 @@ export default function Aside({ setsidebarp }) {
                             </Link>
                         </li>
                     </ul>
-                    {/* <ul className="mt-6">
+                    <ul className="mt-6">
                         <li className="relative px-6 py-3">
                             <Link href="/recovery">
                                 <a  onClick={(e)=>{ setsideBar(!sideBari); e.preventDefault() }} className={`inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 ${light ? "text-gray-500 dark:text-gray-400" : "text-gray-800 dark:text-gray-200"} `} >
@@ -49,7 +49,7 @@ export default function Aside({ setsidebarp }) {
                                 </a>
                             </Link>
                         </li>
-                    </ul> */}
+                    </ul>
 
                 </div>
             </aside>
