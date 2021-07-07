@@ -592,9 +592,9 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
   return (
     <div className="h-screen  overflow-y-scroll ">
-      <div className="max-w-screen-lg mx-auto py-5 mb-10">
+      <div className="max-w-screen-lg mx-auto py-5 mb-10 bg-pink-100">
         <section className="">
-          <div className="w-11/12  mx-auto bg-pink-200 ">
+          <div className="w-11/12  mx-auto">
             <h1 className="text-4xl font-semibold text-black dark:text-red-600">miniBABYDOGE Earnings Dashboard</h1>
             <div className="text-white text-xl flex flex-row justify-between p-3 my-3 rounded bg-red-700">
               <div>
