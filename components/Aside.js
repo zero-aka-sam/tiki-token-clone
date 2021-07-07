@@ -27,7 +27,7 @@ export default function Aside({ setsidebarp }) {
                 <div className="py-4 text-gray-500 dark:text-gray-100">
                     <a className="flex ml-6 text-lg font-bold text-gray-800 dark:text-gray-100" href="">
                         <img className="mr-2 w-10 h-10" src="BABYMINIDOGE_002-1.png" />
-                        <span className="self-center">The BNBHODL Bar</span>
+                        <span className="self-center">MINIBABYDOGE</span>
                     </a>
 
                     <ul className="mt-6">
