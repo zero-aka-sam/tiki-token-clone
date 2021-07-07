@@ -6,7 +6,6 @@ import artifact from './artifacts/index.json'
 import { ethers } from 'ethers'
 
 
-
 const pcsRouter = {
   // address: '0x05ff2b0db69458a0750badebc4f9e13add608c7f',
   address: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
@@ -659,7 +658,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
 
 
-
+/*
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
                 <div className="p-4 flex flex-col text-center items-center">
@@ -745,8 +744,9 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   </p>
                 </div>
               </div>
-            
+            */
              */}
+             
             </div>
           </div>
         </section>
