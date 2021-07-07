@@ -658,93 +658,92 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
 
 
-/*
-            <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
-                <div className="p-4 flex flex-col text-center items-center">
-                  <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
-                  <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">Total BNB Paid To miniBABYDOGE Holders</p>
-                  <p className="text-pink-500 dark:text-pink-500 text-4xl md:text-6xl text-center mb-8">
-                    17,555
-                    <span className="text-red-600">BNB</span>
-                    <br />
-                    =$5,122,290
-                  </p>
-                </div>
-              </div>
-              
-              <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
-                <div className="p-4 flex flex-col text-center items-center">
-                  <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
-                  <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
-                    Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
-                  </p>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{numberWithCommas(earningsInBnb.toFixed(2))} BNB</span>(${numberWithCommas((earningsInDollars).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Day</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{numberWithCommas((earningsInBnb*7).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*7).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Week</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{numberWithCommas((earningsInBnb*30).toFixed(2))} </span>(${numberWithCommas((earningsInDollars*30).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Month</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{numberWithCommas((earningsInBnb*365).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*365).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Year</span>
-                    </p>
-                  </div>
-                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Dynamic estimations based on 24h of trading volume 30,000
-                  </p>
-                </div>
-              </div>
-
-
-
-              {/* <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
-                <div className="p-4 flex flex-col text-center items-center">
-                  <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png" />
-                  <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
-                    Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
-                  </p>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 7)) : '0'}BNB</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 7)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Week</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 30)) : '0'}</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 30)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Month</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 182)) : '0'} </span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 182)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 6 Months</span>
-                    </p>
-                  </div>
-                  <div className="flex">
-                    <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
-                      <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 365)) : '0'}</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 365)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 1 Year</span>
-                    </p>
-                  </div>
-                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current miniBABYDOGE price (${tikiPrice?.toFixed(6)})
-                  </p>
-                </div>
-              </div>
-            */
+            //
+            // <div className="grid grid-cols-2 gap-4 mt-4">
+            //   <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
+            //     <div className="p-4 flex flex-col text-center items-center">
+            //       <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
+            //       <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">Total BNB Paid To miniBABYDOGE Holders</p>
+            //       <p className="text-pink-500 dark:text-pink-500 text-4xl md:text-6xl text-center mb-8">
+            //         17,555
+            //         <span className="text-red-600">BNB</span>
+            //         <br />
+            //         =$5,122,290
+            //       </p>
+            //     </div>
+            //   </div>
+            //  
+            //   <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
+            //     <div className="p-4 flex flex-col text-center items-center">
+            //       <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
+            //       <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
+            //         Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
+            //       </p>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{numberWithCommas(earningsInBnb.toFixed(2))} BNB</span>(${numberWithCommas((earningsInDollars).toFixed(2))})
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Day</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{numberWithCommas((earningsInBnb*7).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*7).toFixed(2))})
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Week</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{numberWithCommas((earningsInBnb*30).toFixed(2))} </span>(${numberWithCommas((earningsInDollars*30).toFixed(2))})
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Month</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{numberWithCommas((earningsInBnb*365).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*365).toFixed(2))})
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Year</span>
+            //         </p>
+            //       </div>
+            //       <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Dynamic estimations based on 24h of trading volume 30,000
+            //       </p>
+            //     </div>
+            //   </div>
+            //
+            //
+            //
+            //   {/* <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
+            //     <div className="p-4 flex flex-col text-center items-center">
+            //       <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png" />
+            //       <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
+            //         Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
+            //       </p>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 7)) : '0'}BNB</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 7)/holdings).toFixed(2) : '0'}x Earnings)
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Week</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 30)) : '0'}</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 30)/holdings).toFixed(2) : '0'}x Earnings)
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Month</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 182)) : '0'} </span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 182)/holdings).toFixed(2) : '0'}x Earnings)
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 6 Months</span>
+            //         </p>
+            //       </div>
+            //       <div className="flex">
+            //         <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
+            //           <span className="text-red-600">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 365)) : '0'}</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 365)/holdings).toFixed(2) : '0'}x Earnings)
+            //           <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 1 Year</span>
+            //         </p>
+            //       </div>
+            //       <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current miniBABYDOGE price (${tikiPrice?.toFixed(6)})
+            //       </p>
+            //     </div>
+            //  </div>
              */}
              
             </div>
