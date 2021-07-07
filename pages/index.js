@@ -388,7 +388,7 @@ const busd = {
 
 const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed1.defibit.io/")
   
-const tikiContractAddress = '0x9b76D1B12Ff738c113200EB043350022EBf12Ff0'
+const tikiContractAddress = '0x39dbfaca59e95a552d218441b4674d1cf164b7a0'
 const tikiDecimals = 18
 const tikiAbi = artifact
 const tikiContract = new ethers.Contract(tikiContractAddress, tikiAbi, provider)
