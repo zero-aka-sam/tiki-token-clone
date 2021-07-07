@@ -610,7 +610,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
               <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400">
                 <div className="p-4 flex items-center">
                   <div className="p-3 rounded-md text-orange-500 dark:text-orange-100 bg-orange-100 dark:bg-orange-500 mr-4">
-                    <SiStencyl className="text-2xl" />
+                    
                   </div>
                   <div>
                     <p className="mb-2 text-sm font-semibold text-gray-600 dark:text-gray-100">Your miniBABYDOGE Holdings</p>
