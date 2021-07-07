@@ -657,7 +657,6 @@ const compoundedTikiAfterNDays = (starting, days) => {
             </div>
 
 
-{/*
 <div className="grid grid-cols-2 gap-4 mt-4">
   <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
     <div className="p-4 flex flex-col text-center items-center">
@@ -705,7 +704,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
       <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Dynamic estimations based on 24h of trading volume 30,000
       </p>
     </div>
-  </div>*/}
+  </div>
 
 
 
