@@ -592,17 +592,17 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
   return (
     <div className="h-screen  overflow-y-scroll ">
-      <div className="max-w-screen-lg mx-auto py-5 mb-10 bg-pink-100">
+      <div className="max-w-screen-lg mx-auto py-5 mb-10">
         <section className="">
           <div className="w-11/12  mx-auto ">
-            <h1 className="text-4xl font-semibold text-black dark:text-red-600">MINIBABYDOGE Earnings Manager</h1>
+            <h1 className="text-4xl font-semibold text-black dark:text-red-600">miniBABYDOGE Earnings Dashboard</h1>
             <div className="text-white text-xl flex flex-row justify-between p-3 my-3 rounded bg-red-700">
               <div>
                 <h1>Please enter your address above</h1>
               </div>
               <div>
                 {/* <h1>
-                  Buy MINIBABYDOGE
+                  Buy miniBABYDOGE
                 </h1> */}
               </div>
             </div>
@@ -613,7 +613,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Your MINIBABYDOGE Holdings</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Your miniBABYDOGE Holdings</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${numberWithCommas(holdings)}`}</p>
                   </div>
                 </div>
@@ -667,7 +667,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
               <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
-                  <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">Total BNB Paid To MINIBABYDOGE Holders</p>
+                  <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">Total BNB Paid To miniBABYDOGE Holders</p>
                   <p className="text-pink-500 dark:text-pink-500 text-4xl md:text-6xl text-center mb-8">
                     17,555
                     <span className="text-red-600">BNB</span>
@@ -681,7 +681,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
-                    Your {numberWithCommas(holdings)} MINIBABYDOGE Earns:
+                    Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
                   </p>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
@@ -718,7 +718,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                 <div className="p-4 flex flex-col text-center items-center">
                   <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png" />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
-                    Your {numberWithCommas(holdings)} MINIBABYDOGE Earns:
+                    Your {numberWithCommas(holdings)} miniBABYDOGE Earns:
                   </p>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
@@ -744,7 +744,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                       <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 1 Year</span>
                     </p>
                   </div>
-                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current MINIBABYDOGE price (${tikiPrice?.toFixed(6)})
+                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current miniBABYDOGE price (${tikiPrice?.toFixed(6)})
                   </p>
                 </div>
               </div>
