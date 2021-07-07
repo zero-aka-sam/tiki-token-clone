@@ -31,9 +31,9 @@ export default function Navbar({setmodep ,setsidebarp, address,dispatch}) {
     }
     return (
         <>
-        <nav className="bg-gray-50 dark:bg-gray-800 shadow">
+        <nav className="bg-gray-50 dark:bg-pink-800 shadow">
             <div className="flex flex-row justify-between  mx-auto items-center py-2  px-5 max-w-screen-lg ">
-                <div className="p-2 border border-gray-800  rounded">
+                <div className="p-2 border border-pink-800  rounded">
                     <Mode />
                 </div>
                 <div className="rounded relative w-full max-w-xl mr-6 focus-within:text-purple-500">
