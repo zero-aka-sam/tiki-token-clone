@@ -666,7 +666,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
                 <div className="p-4 flex flex-col text-center items-center">
-                  <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/bnb.162aaf57.png" />
+                  <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">Total BNB Paid To MINIBABYDOGE Holders</p>
                   <p className="text-pink-500 dark:text-pink-500 text-4xl md:text-6xl text-center mb-8">
                     17,555
@@ -679,7 +679,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
               
               <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
                 <div className="p-4 flex flex-col text-center items-center">
-                  <img className="w-32 h-32 mb-4 mt-4" src="https://tikitoken.app/static/media/money.d301ec34.png" />
+                  <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png " />
                   <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
                     Your {numberWithCommas(holdings)} MINIBABYDOGE Earns:
                   </p>
