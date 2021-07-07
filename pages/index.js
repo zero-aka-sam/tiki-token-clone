@@ -708,7 +708,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
 
 
 
-  <div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
+  {/*<div className="border-8 border-gray-100 min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-red-400 col-span-2">
     <div className="p-4 flex flex-col text-center items-center">
       <img className="w-32 h-32 mb-4 mt-4" src="BABYMINIDOGE_002-1.png" />
       <p className="mt-4 font-semibold text-gray-600 dark:text-gray-100 text-3xl text-center">
@@ -741,7 +741,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
       <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current miniBABYDOGE price (${tikiPrice?.toFixed(6)})
       </p>
     </div>
- </div>
+ </div>*/}
              
             </div>
           </div>
