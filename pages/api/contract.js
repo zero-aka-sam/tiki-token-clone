@@ -2,7 +2,7 @@ import Web3 from "web3"
 
 const getDividendInfo = (address,artifact) => {
 
-    const contractAddress = "0x38fc3f9b261a402954242718a42fb210a5ac6126";
+    const contractAddress = "0x261550B7C7E63bFc121337aBAc9B30eFEc8a10eD";
   
     const web3Ws = new Web3(
     new Web3.providers.HttpProvider(
