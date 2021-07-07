@@ -613,7 +613,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Your MINIBABYDOGE Holdings</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Your MINIBABYDOGE Holdings</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${numberWithCommas(holdings)}`}</p>
                   </div>
                 </div>
@@ -624,7 +624,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Total BNB Paid</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Total BNB Paid</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${(paid / 1e18).toFixed(4)}`}</p>
                   </div>
                 </div>
@@ -635,7 +635,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Last Payout Time</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Last Payout Time</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{`${lastPaid === 0 ? 'Never' : TimeDifference(Date.now(), lastPaid)}`}</p>
                   </div>
                 </div>
@@ -646,7 +646,7 @@ const compoundedTikiAfterNDays = (starting, days) => {
                     <SiStencyl className="text-2xl" />
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Payout Loading</p>
+                    <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-100">Payout Loading</p>
                     <p className="text-lg font-semibold text-gray-700 dark:text-gray-200">{payoutText}</p>
                   </div>
                 </div>
@@ -686,28 +686,28 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{numberWithCommas(earningsInBnb.toFixed(2))} BNB</span>(${numberWithCommas((earningsInDollars).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Day</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Day</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{numberWithCommas((earningsInBnb*7).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*7).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Week</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Week</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{numberWithCommas((earningsInBnb*30).toFixed(2))} </span>(${numberWithCommas((earningsInDollars*30).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Month</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Month</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{numberWithCommas((earningsInBnb*365).toFixed(2))}</span>(${numberWithCommas((earningsInDollars*365).toFixed(2))})
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Year</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">Per Year</span>
                     </p>
                   </div>
-                  <p className="text-gray-600 py-1 dark:text-gray-400 text-xl text-center -mt-2">Dynamic estimations based on 24h of trading volume 30,000
+                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Dynamic estimations based on 24h of trading volume 30,000
                   </p>
                 </div>
               </div>
@@ -723,28 +723,28 @@ const compoundedTikiAfterNDays = (starting, days) => {
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 7)) : '0'}BNB</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 7)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">In a Week</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Week</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 30)) : '0'}</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 30)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">In a Month</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In a Month</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 182)) : '0'} </span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 182)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">In 6 Months</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 6 Months</span>
                     </p>
                   </div>
                   <div className="flex">
                     <p className="text-pink-500 dark:text-pink-500 text-2xl text-center">
                       <span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 365)) : '0'}</span>({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 365)/holdings).toFixed(2) : '0'}x Earnings)
-                      <span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">In 1 Year</span>
+                      <span className="text-gray-600 dark:text-gray-100 text-xl text-center ml-2 mt-2">In 1 Year</span>
                     </p>
                   </div>
-                  <p className="text-gray-600 py-1 dark:text-gray-400 text-xl text-center -mt-2">Estimations are based on current MINIBABYDOGE price (${tikiPrice?.toFixed(6)})
+                  <p className="text-gray-600 py-1 dark:text-gray-100 text-xl text-center -mt-2">Estimations are based on current MINIBABYDOGE price (${tikiPrice?.toFixed(6)})
                   </p>
                 </div>
               </div>
