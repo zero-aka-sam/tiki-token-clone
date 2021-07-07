@@ -42,7 +42,7 @@ export default function Aside({ setsidebarp }) {
                     </ul>
                     <ul className="mt-6">
                         <li className="relative px-6 py-3">
-                            <Link href="/recovery">
+                            <Link href="https://poocoin.app/tokens/0x261550b7c7e63bfc121337abac9b30efec8a10ed">
                                 <a  onClick={(e)=>{ setsideBar(!sideBari); e.preventDefault() }} className={`inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 ${light ? "text-gray-500 dark:text-gray-400" : "text-gray-800 dark:text-gray-200"} `} >
                                     <RiDeviceRecoverLine />
                                     <span className="ml-4">Poocoin</span>
@@ -52,7 +52,7 @@ export default function Aside({ setsidebarp }) {
                     </ul>
                      <ul className="mt-6">
                         <li className="relative px-6 py-3">
-                            <Link href="/recovery">
+                            <Link href="https://bscscan.com/address/0x261550B7C7E63bFc121337aBAc9B30eFEc8a10eD">
                                 <a  onClick={(e)=>{ setsideBar(!sideBari); e.preventDefault() }} className={`inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 ${light ? "text-gray-500 dark:text-gray-400" : "text-gray-800 dark:text-gray-200"} `} >
                                     <RiDeviceRecoverLine />
                                     <span className="ml-4">Contract</span>
